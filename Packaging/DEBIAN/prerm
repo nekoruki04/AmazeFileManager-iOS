@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+# Amaze File Manager - Pre-removal script for Dopamine Rootless
+# Unregisters Amaze.app from SpringBoard icon cache via uicache
+
+UICACHE="/var/jb/usr/bin/uicache"
+APP_PATH="/var/jb/Applications/Amaze.app"
+
+if [ -x "$UICACHE" ]; then
+    "$UICACHE" -u "$APP_PATH" || true
+fi
+
+exit 0

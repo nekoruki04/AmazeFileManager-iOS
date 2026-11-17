@@ -1,0 +1,12 @@
+Package: xyz.teamamaze.amazefilemanager
+Name: Amaze File Manager for iOS
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Native iOS file manager for Dopamine Rootless jailbroken devices
+Maintainer: nekoruki <nekoruki04@users.noreply.github.com>
+Author: Team Amaze & nekoruki
+Section: Utilities
+Priority: optional
+Depends: firmware (>= 16.0)
+Installed-Size: 16384
+Tag: role::hacker, purpose::console
