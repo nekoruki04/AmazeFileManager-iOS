@@ -66,21 +66,7 @@ uicache -p /var/jb/Applications/Amaze.app
 
 # 2. Package into rootless Debian package
 python3 AmazeRootless/scripts/package_deb.py --app AmazeRootless/build/Amaze.app --output build/amaze-rootless_1.0.0_iphoneos-arm.deb
-
-# 3. Run verification test suite & deep functional tests
-python3 AmazeRootless/Tests/verify_suite.py
-python3 AmazeRootless/Tests/functional_test_runner.py
 ```
-
----
-
-## Testing & Quality Evidence
-
-All file operations, archive creation/extraction, security bounds, and packaging structures are tested via automated suites:
-- **Package Verification Suite**: `AmazeRootless/Tests/verify_suite.py` (100% pass)
-- **Deep Functional Test Suite**: `AmazeRootless/Tests/functional_test_runner.py` (30/30 checks pass)
-- **Machine-Readable Report**: `AmazeRootless/Tests/test_report.json`
-- **Latest SHA-256**: `bfb6d7f50e6da08f6efbdc747bdf58bae66162fac21619b3a2c1e6511e6400dc`
 
 ---
 
